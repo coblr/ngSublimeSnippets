@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+describe('$1', function(){
+    'use strict';
+
+    let \$element;
+    let \$scope;
+    let vm;
+
+    beforeEach(module('${2:templateModuleName}'));
+    beforeEach(module('${3:moduleName}'));
+
+    beforeEach(inject(function(\$rootScope, \$compile){
+        \$element = angular.element('<${4:element-tag}></${4:element-tag}>');
+
+        \$scope = \$rootScope.\$new();
+        \$compile(\$element)(\$scope);
+        \$scope.\$digest();
+
+        vm = \$element.controller('${5:directiveName}');
+    }));
+
+    ////////////
+
+    it('$6', function(){
+        $0
+    });
+
+});
+]]></content>
+<tabTrigger>ngDirectiveSpec</tabTrigger>
+<description>Creates a spec for an AngularJS directive.</description>
+</snippet>

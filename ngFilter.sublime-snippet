@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+(function(){
+    'use strict';
+
+    angular
+        .module('${1:moduleName}')
+        .filter('${2:filterName}', ${2:filterName});
+
+    // @ngInject
+    function ${2:filterName}(){
+        return function(input){
+            return input;
+        }
+    }
+
+})();
+]]></content>
+<tabTrigger>ngFilter</tabTrigger>
+<description>Creates an AngularJS filter.</description>
+</snippet>

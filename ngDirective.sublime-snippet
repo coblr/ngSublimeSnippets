@@ -1,0 +1,41 @@
+<snippet>
+<content><![CDATA[
+(function(){
+    'use strict';
+
+    angular
+        .module('${1:moduleName}')
+        .directive('${2:directiveName}', ${2:directiveName});
+
+    const template = ``;
+
+    // @ngInject
+    function ${2:directiveName}(){
+        return {
+            restrict: 'E',
+            template: template,
+            controller: ${3:controllerName},
+            controllerAs: '${4:controllerAs}',
+            bindToController: true,
+            scope: {$5}
+        }
+    }
+
+    // @ngInject
+    function ${3:controllerName}(){
+        const vm = this;
+
+        activate();
+
+        ////////////
+
+        function activate(){
+            $0
+        }
+    }
+
+})();
+]]></content>
+<tabTrigger>ngDirective</tabTrigger>
+<description>Creates an AngularJS directive.</description>
+</snippet>
