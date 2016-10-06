@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+(() => {
+    'use strict';
+
+    angular
+        .module('${1:moduleName}')
+        .config(${2:configFunctionName});
+
+    ////////////
+
+    // @ngInject
+    function ${2:configFunctionName}(){
+        $0
+    }
+
+})();
+]]></content>
+<tabTrigger>ngConfig</tabTrigger>
+<description>Creates an AngularJS module config.</description>
+</snippet>

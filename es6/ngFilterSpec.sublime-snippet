@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+describe('$1', () => {
+    'use strict';
+
+    let filter;
+
+    beforeEach(module('${2:moduleName}'));
+
+    beforeEach(inject((_\$filter_) => {
+        filter = _\$filter_('${3:filterName}');
+    }));
+
+    ////////////
+
+    it('$4', () => {
+        $0
+    });
+
+});
+]]></content>
+<tabTrigger>ngFilterSpec</tabTrigger>
+<description>Creates a spec for an AngularJS filter.</description>
+</snippet>

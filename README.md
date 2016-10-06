@@ -2,6 +2,10 @@
 
 A useful little collection of code snippets for Sublime Text 3, including a corresponding starter spec.
 
+If you're going old school, use the [ES5](https://github.com/coblr/ngSublimeSnippets/tree/master/ES5) snippets.
+
+If you're transpiling with a transpiler like Babel, you can use the [ES6](https://github.com/coblr/ngSublimeSnippets/tree/master/ES6) snippets for consistent ES6 code (i.e. not sprinkled with `function()`).
+
 ### Installation
 
  1. Clone Fork or Download this repo.

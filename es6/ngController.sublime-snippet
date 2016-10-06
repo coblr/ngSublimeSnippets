@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+(() => {
+    'use strict';
+
+    angular
+        .module('${1:moduleName}')
+        .controller('${2:controllerName}', ${2:controllerName});
+
+    // @ngInject
+    function ${2:controllerName}(){
+        const vm = this;
+
+        activate();
+
+        ////////////
+
+        function activate(){
+            $0
+        }
+    }
+
+})();
+]]></content>
+<tabTrigger>ngController</tabTrigger>
+<description>Creates an AngularJS controller.</description>
+</snippet>

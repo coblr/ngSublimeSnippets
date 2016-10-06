@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+(() => {
+    'use strict';
+
+    angular
+        .module('${1:moduleName}',[$0]);
+
+})();
+]]></content>
+<tabTrigger>ngModule</tabTrigger>
+<description>Creates an AngularJS module.</description>
+</snippet>

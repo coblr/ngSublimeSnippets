@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+describe('$1', () => {
+    'use strict';
+
+    let vm;
+    let \$scope;
+
+    beforeEach(module('${2:moduleName}'));
+
+    beforeEach(inject((\$controller, \$rootScope) => {
+        \$scope = \$rootScope.\$new();
+        vm = \$controller('${3:controllerName}', {
+            \$scope: \$scope
+        });
+        \$scope.\$digest();
+    }));
+
+    ////////////
+
+    it('$4', () => {
+        ${0}
+    });
+
+});
+]]></content>
+<tabTrigger>ngControllerSpec</tabTrigger>
+<description>Creates a spec for an AngularJS controller.</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+describe('$1', () => {
+    'use strict';
+
+    let ${2:factoryName};
+
+    beforeEach(module('${3:moduleName}'));
+
+    beforeEach(inject((_${2:factoryName}_, ) => {
+        ${2:factoryName} = _${2:factoryName}_;
+    }));
+
+    ////////////
+
+    it('$4', () => {
+        $0
+    });
+
+});
+]]></content>
+<tabTrigger>ngFactorySpec</tabTrigger>
+<description>Creates a spec for an AngularJS factory.</description>
+</snippet>

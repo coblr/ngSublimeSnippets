@@ -1,6 +1,6 @@
 <snippet>
 <content><![CDATA[
-describe('$1', function(){
+describe('$1', () => {
     'use strict';
 
     let \$element;
@@ -10,7 +10,7 @@ describe('$1', function(){
     beforeEach(module('${2:templateModuleName}'));
     beforeEach(module('${3:moduleName}'));
 
-    beforeEach(inject(function(\$rootScope, \$compile){
+    beforeEach(inject((\$rootScope, \$compile) => {
         \$element = angular.element('<${4:element-tag}></${4:element-tag}>');
         \$scope = \$rootScope.\$new();
         
@@ -22,7 +22,7 @@ describe('$1', function(){
 
     ////////////
 
-    it('$6', function(){
+    it('$6', () => {
         $0
     });
 
